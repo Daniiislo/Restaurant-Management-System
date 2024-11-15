@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-fixed">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="KhachHangdaDangNhap.html">
+                            <h1 class="logo-text">Citrus Royale</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu">
+                                <li><a href="#about">Giới Thiệu</a></li>
+                                <li><a href="#menu">Thực Đơn</a></li>
+                                <li><a href="#datban">Đặt Bàn</a></li>
+                            </ul>
+                        </nav>
+                        <!--giỏ hàng + icon tk -->
+                        <div class="header-right">
+                            <a href="javascript:void(0)" class="header-btn header-cart">
+                                <i class="uil uil-shopping-bag"></i>
+                                <span class="cart-number">0</span>
+                            </a>
+                            <!-- Biểu tượng người dùng với onclick để mở menu -->
+                            <a href="javascript:void(0)" class="header-btn profile-icon" onclick="toggleProfileMenu()">
+                                <i class="uil uil-user-md"></i>
+                            </a>
+                            <!-- Menu bật lên cho tài khoản -->
+                            <div class="profile-menu" id="profileMenu">
+                                <a href="UpdateInfo.html">Cập nhật thông tin cá nhân</a>
+                                <a href="SearchHistory.html">Tra cứu lịch sử mua hàng</a>
+                                <a href="index.html" class="logout-btn">Đăng xuất <i class="uil uil-sign-out-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
+
+
+    <main class="main-content">
+        <h2 class="main-header">Thông tin của bạn</h2>
+        <div class="content-wrapper">
+            <!-- Ảnh bên trái -->
+            <div class="image-container">
+                <img src="nhahang.jpg" alt="Image Description">
+            </div>
+            
+            <!-- Nội dung form bên phải -->
+            <div class="user-info-container">
+                <form id="updateForm">
+                    <label for="username">Họ và tên:</label>
+                    <input type="text" id="username" name="username" placeholder="Tên của bạn" required>
+    
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại của bạn" required>
+    
+                    <label for="email">Email Liên hệ:</label>
+                    <input type="email" id="email" name="email" placeholder="Email liên hệ của bạn" required>
+    
+                    <button type="submit" class="save-btn">Lưu thay đổi</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2024 <span class="name">Citrus Royale.</span> All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
+        </div>
+    </footer>
+    <!-- custom js  -->
+    <script src="main.js"></script>
+</body>
+
+</html>
